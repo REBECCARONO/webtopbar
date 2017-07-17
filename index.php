@@ -26,53 +26,41 @@
 <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 <script>
-
-$('#mytabs a').click(function(e) {
-    e.preventDefault()
-	$(this).tab('show')
-});
+function myFunction() {
+    var x = document.getElementById("navbarlist");
+    if (x.className === "topnavigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnavigation";
+    }
+}
 </script>
 
 </head>
 
-<body style="position:relative; min-height:500px; top:0px;">
+<body id="body" style="position:relative; min-height:700px; background-image:url(rebecca.png); font-family:Arial, Helvetica, sans-serif; font-size:16px;">
 
-<div id="wrapper">
-   <!-- <div id="container-fluid" style="position:absolute" class="nav navbar-fixed-top">
-    	<div class="navbar-text navbar-right">
-        <i class="fa fa-star-half fa-fw">REBECCA.</i>
-        </div>
-    </div>-->
+
+
     
 <div id="top">
-  <!--<i class="fa fa-star-half-full fa-fw navber-right" style="color:#939"></i>rebecca Ent.-->
   <div class="toptext" style="font-family:'Times New Roman', Times, serif; font-style:italic">BRING DESIGNS TO REALITY  </div>
 </div>
     
-    <nav id="nav" class="nav navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-    	<div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-toggle=".navbar-collapse">
-        <span class="sr-only">Toggle Navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        </div>
-        
-        <ul class="nav navbar-text navbar-left"><i class="fa fa-star fa-fw"></i>RISE</ul>
-        <ul class="nav navbar-nav navbar-right" id="mytabs"> 
-        
-        <li><a href="index.php" target="_top" class="active">HOME</a></li>
-        <li><a href="index.php?action=archive" target="_top">ARCHIVEMENTS</a></li>
-        <li><a href="index.php?action=experience">EXPERIENCE</a></li>
-        <li><a href="index.php?action=interest">INTERESTS</a></li>
-        <li><a href="next.php">GALLARY</a></li>
-        </ul>
-    </div>
-    </nav>
-    
-<div id="contents">
+
+<ul id="navbarlist" class="topnavigation">
+  <li><a href="index.php" class="active">Home</a></li>
+  <li><a href="index.php?action=archive">ARCHIVEMENTS</a></li>
+  <li><a href="index.php?action=experience">EXPERIENCE</a></li>
+  <li><a href="index.php?action=interest">INTERESTS</a></li>
+  <li><a href="next.php">gallary</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:17px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<div id="container">    
+	<div class="container-fluid" id="contents">
            <?php
 		if(!empty($_REQUEST['action']))
 		{			
@@ -103,8 +91,8 @@ $('#mytabs a').click(function(e) {
 		
 		?>
 			
-</div>
-        
+	</div>
+</div>        
 
 
 <div class="nav navbar-inverse navbar-fixed-bottom" style="color:#F0F;">
@@ -112,5 +100,4 @@ $('#mytabs a').click(function(e) {
 </div>
 
 
-</div>
 </body></html>

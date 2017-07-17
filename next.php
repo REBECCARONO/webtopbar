@@ -179,10 +179,11 @@ background-color:#717171;
 }</style>
 
 </head>
-<body style=" background-color:#333;max-width:1000px;min-width:500px;position:relative;margin:auto;">
+<body style=" background-color:#333;position:relative;">
 
 <br>
-<div style=" background-color:#333;max-width:700px;min-width:250px;position:relative;margin:auto;">
+<div style=" background-color:#333;max-width:700px;max-width:700px; padding:1em 1em;position:relative;">
+
 <div style="text-align:right">
 <p align="right"><b><a href="index.php" style="color:#FFF">Exit</a></b></p>
 </div>
