@@ -48,7 +48,7 @@ function myFunction() {
 </div>
     
 
-<ul id="navbarlist" class="topnavigation">
+<ul id="navbarlist" class="topnavigation" data-spy="affix-bottom" data-offset-top="25">
   <li><a href="index.php" class="active">Home</a></li>
   <li><a href="index.php?action=archive">ARCHIVEMENTS</a></li>
   <li><a href="index.php?action=experience">EXPERIENCE</a></li>

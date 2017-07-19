@@ -1,54 +1,12 @@
-<?php 
 
-function login(){
-	$title="LOGIN";
-	?>
-	
-                   
-                    
-                    <div>
-                        <form role="form" action="" method="post" name="loginform" onSubmit="return validateLogin()">
-                            <fieldset>
-                                <input type="hidden" value="loginuser" name="loginuser"  />
-                                <div class="form-group">
-                                    <input class="" placeholder="User name" name="username" id="username" type="text" autofocus required>
-                                </div>
-                                <div class="form-group">
-                                    <input class="" placeholder="Password" name="password" id="password" type="password" value="" required>
-                                </div>
-                                <input type="submit"  value="LOGIN" onClick="" />
-                            </fieldset>
-                        </form>
-                        
-                     </div>
 
 	          <?php 
-			  
-
-	  
-			  }
-			  
-			  
-function validateLogin(){	
-$username=$_POST['username'];
-$password=$_post['password'];
-
-if($username="rebecca" && $password="becky"){
-	header("Location:index.php?action=archive.php");
-	
-	}else{
-		header("Location:index.php");
-			}
-	
-	}
-
-
 	
 function experience(){
 	
 	$title="Experience";
 	?>
-	<h4 style="text-align:center"><b>Experince</b></h4></br>
+	<h5 style="text-align:center; color:#C00"><b>Experince</b></h5>
 <h5><b>mDex:</b></h5> is an application that was Show cased in the Imagine Cup world Finals (2014).mDex is a smart phone base lower cost alternative to diagnosing sickle cell disease.it runs on any windows phone with windows 8.0 operating system.This application was and is still being developed using C#.  
 I was the Software Lead Developer. The actions behind every widget, I was responsible for that.co-designed the mDex application.
 The choice of colors, widget placements and flow of actions/activities.
@@ -108,15 +66,5 @@ function interest(){?>
 	
 	<?php }
 	
-	
-	
-function signout(){
-		session_start();
-        session_destroy();
-		header("location:index.php");
-		exit();
-			}			  
-			  
-			  
 
 ?>

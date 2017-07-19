@@ -43,7 +43,7 @@ tr:nth-child(odd){
 position:fixed;
 background-color:#939;
 height:25px;
-padding-top:5px;
+padding-top:10px;
 line-height:5px;
 overflow:hidden;
 z-index:1;
@@ -59,7 +59,7 @@ top:0;
 font-family:'Times New Roman', Times, serif; font-style:italic;
 }
 
-#navbarlist{z-index:2;}
+#navbarlist{z-index:2; top:25px}
 
 
 .hide-small { display:none !important}
@@ -94,7 +94,7 @@ ul.topnavigation li a:active ul.topnavigation li a:visited > ul.topnavigation li
 ul.topnavigation li.icon {display: none;}
 
 #container{
-	padding: 1em 3em 0 3em;
+	padding: 3em 3em 0 3em;
    
 	}
 	
